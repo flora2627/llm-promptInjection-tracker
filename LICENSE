@@ -1,0 +1,71 @@
+本仓库采用双许可 —— 代码与内容分开。
+This repository is dual-licensed: code and content are covered separately.
+
+═══════════════════════════════════════════════════════════════════════════
+1. 内容(Content) — CC BY 4.0
+═══════════════════════════════════════════════════════════════════════════
+
+适用范围:`data/*.json` 中的 note / 战线卡 / 误读标记等编者撰写的文字,
+`template.html` 中的正文散文,`README.md`,以及生成的时间线森林图的
+结构与呈现。
+
+Applies to: the editorial prose in `data/*.json` (notes, front cards,
+misread annotations), the body copy in `template.html`, `README.md`,
+and the structure and presentation of the generated timeline graph.
+
+许可:Creative Commons Attribution 4.0 International (CC BY 4.0)
+License:  https://creativecommons.org/licenses/by/4.0/
+法律文本 / Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+你可以自由分享与改编,包括商业用途,只要给出署名。
+署名方式建议 / Suggested attribution:
+
+    "LLM 越狱 · 领域追踪" by flora2627, CC BY 4.0
+    (尚未公开发布,暂无仓库地址)
+
+═══════════════════════════════════════════════════════════════════════════
+2. 代码(Code) — MIT
+═══════════════════════════════════════════════════════════════════════════
+
+适用范围:`build.py`,以及 `template.html` 中的 CSS 与 JavaScript
+(布局引擎、正交通道布线、缩放与抽屉逻辑)。
+
+Applies to: `build.py`, and the CSS/JavaScript in `template.html`
+(layout engine, orthogonal edge routing, zoom and drawer logic).
+
+MIT License
+
+Copyright (c) 2026 flora2627
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+═══════════════════════════════════════════════════════════════════════════
+3. 书目信息(Bibliographic data) — 无权利主张
+═══════════════════════════════════════════════════════════════════════════
+
+论文标题、作者、年份、venue、arXiv id、URL 属于事实性信息,不受版权保护,
+本项目对其不主张任何权利。这些论文本身的著作权归各自作者所有;本项目仅
+链接到原文,不复制论文正文或图表。页面中出现的少量原文短句引用,均标注
+出处并用于评论目的。
+
+Paper titles, authors, years, venues, arXiv identifiers and URLs are facts
+and are not subject to copyright; no rights are claimed over them. Copyright
+in the cited papers remains with their respective authors. This project links
+to originals and reproduces no paper body text or figures. The few short
+verbatim quotations that appear are attributed and used for commentary.

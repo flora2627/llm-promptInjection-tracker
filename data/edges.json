@@ -1,0 +1,1250 @@
+[
+ {
+  "from": "promptinject",
+  "to": "piname",
+  "type": "inherit",
+  "label": "命名 → 第一个攻击框架"
+ },
+ {
+  "from": "greshake",
+  "to": "piname",
+  "type": "inherit",
+  "label": "拼接问题 → 攻击者不必碰输入框"
+ },
+ {
+  "from": "greshake",
+  "to": "promptinject",
+  "type": "inherit",
+  "label": "直接注入 → 间接注入"
+ },
+ {
+  "from": "aiinject",
+  "to": "greshake",
+  "type": "inherit",
+  "label": "把直接/间接二分带进安全圈"
+ },
+ {
+  "from": "worstcase",
+  "to": "piname",
+  "type": "inherit",
+  "label": "命名 → 后果论证"
+ },
+ {
+  "from": "worstcase",
+  "to": "greshake",
+  "type": "support",
+  "label": "有工具就等于代第三方执行"
+ },
+ {
+  "from": "sydney",
+  "to": "promptinject",
+  "type": "support",
+  "label": "prompt leaking 的第一个公众案例"
+ },
+ {
+  "from": "pivsjb",
+  "to": "piname",
+  "type": "inherit",
+  "label": "把命名收紧成定义"
+ },
+ {
+  "from": "pivsjb",
+  "to": "houyi",
+  "type": "support",
+  "label": "没有拼接就不叫注入"
+ },
+ {
+  "from": "ciatriad",
+  "to": "aiinject",
+  "type": "inherit",
+  "label": "两年一手漏洞 → CIA 坐标系"
+ },
+ {
+  "from": "ciatriad",
+  "to": "mdimage",
+  "type": "inherit",
+  "label": "把外泄链条系统化"
+ },
+ {
+  "from": "ciatriad",
+  "to": "terminaldillma",
+  "type": "support",
+  "label": "可用性/完整性攻击也算注入后果"
+ },
+ {
+  "from": "houyi",
+  "to": "promptinject",
+  "type": "inherit",
+  "label": "手工载荷 → 黑盒攻击方法学"
+ },
+ {
+  "from": "houyi",
+  "to": "greshake",
+  "type": "inherit",
+  "label": "真实应用上的规模化实证"
+ },
+ {
+  "from": "promptextract",
+  "to": "sydney",
+  "type": "inherit",
+  "label": "轶事 → 可测量的抽取率"
+ },
+ {
+  "from": "promptextract",
+  "to": "promptinject",
+  "type": "inherit",
+  "label": "prompt leaking 的量化版本"
+ },
+ {
+  "from": "hackaprompt",
+  "to": "promptinject",
+  "type": "inherit",
+  "label": "两类攻击 → 全球竞赛语料"
+ },
+ {
+  "from": "tensortrust",
+  "to": "promptinject",
+  "type": "inherit",
+  "label": "抽取/劫持二分沿用至此"
+ },
+ {
+  "from": "tensortrust",
+  "to": "hackaprompt",
+  "type": "support",
+  "label": "人类攻击者语料的第二个大样本"
+ },
+ {
+  "from": "ihbypass",
+  "to": "sydney",
+  "type": "support",
+  "label": "系统提示仍可被整段导出"
+ },
+ {
+  "from": "gandalf",
+  "to": "hackaprompt",
+  "type": "inherit",
+  "label": "竞赛语料 → 威胁模型与平台"
+ },
+ {
+  "from": "gandalf",
+  "to": "tensortrust",
+  "type": "inherit",
+  "label": "游戏化红队的第二代"
+ },
+ {
+  "from": "ytinject",
+  "to": "greshake",
+  "type": "support",
+  "label": "转录文本就是可注入的数据面"
+ },
+ {
+  "from": "formalize",
+  "to": "houyi",
+  "type": "inherit",
+  "label": "案例 → 统一形式化与基准"
+ },
+ {
+  "from": "formalize",
+  "to": "promptinject",
+  "type": "inherit",
+  "label": "把既有攻击收成特例"
+ },
+ {
+  "from": "bipia",
+  "to": "greshake",
+  "type": "inherit",
+  "label": "间接注入的第一个专门基准"
+ },
+ {
+  "from": "bipia",
+  "to": "formalize",
+  "type": "inherit",
+  "label": "基准口径继续收紧"
+ },
+ {
+  "from": "neuralexec",
+  "to": "greshake",
+  "type": "inherit",
+  "label": "手写触发串 → 学出来的触发串"
+ },
+ {
+  "from": "neuralexec",
+  "to": "formalize",
+  "type": "refute",
+  "label": "手写载荷测不出真实鲁棒性"
+ },
+ {
+  "from": "univpi",
+  "to": "formalize",
+  "type": "refute",
+  "label": "不做梯度测试就会高估防御"
+ },
+ {
+  "from": "univpi",
+  "to": "neuralexec",
+  "type": "support",
+  "label": "优化出来的载荷显著强于手写"
+ },
+ {
+  "from": "chatinject",
+  "to": "houyi",
+  "type": "inherit",
+  "label": "上下文分隔 → 伪造 chat template"
+ },
+ {
+  "from": "chatinject",
+  "to": "agentdojo",
+  "type": "refute",
+  "label": "同一基准 5.18%→32.05%"
+ },
+ {
+  "from": "chatinject",
+  "to": "injecagent",
+  "type": "refute",
+  "label": "同一基准 15.13%→45.90%"
+ },
+ {
+  "from": "chatinject",
+  "to": "spotlight",
+  "type": "refute",
+  "label": "提示级防御对模板伪造基本无效"
+ },
+ {
+  "from": "landscape",
+  "to": "formalize",
+  "type": "inherit",
+  "label": "分类法覆盖到 agent 全景"
+ },
+ {
+  "from": "landscape",
+  "to": "agentdojo",
+  "type": "refute",
+  "label": "标准基准上有效的防御不泛化到真实 agent"
+ },
+ {
+  "from": "wildipi",
+  "to": "greshake",
+  "type": "support",
+  "label": "1.2B URL 上量出野外注入确实存在"
+ },
+ {
+  "from": "wildipi",
+  "to": "landscape",
+  "type": "support",
+  "label": "野外目标比攻防叙事更杂"
+ },
+ {
+  "from": "asciismuggler",
+  "to": "mdimage",
+  "type": "inherit",
+  "label": "隐写载体做成通用工具"
+ },
+ {
+  "from": "poisonedrag",
+  "to": "greshake",
+  "type": "inherit",
+  "label": "数据面 → 知识库本身"
+ },
+ {
+  "from": "morris2",
+  "to": "greshake",
+  "type": "inherit",
+  "label": "把 worming 那一格做出来"
+ },
+ {
+  "from": "agentpoison",
+  "to": "poisonedrag",
+  "type": "inherit",
+  "label": "检索投毒 → 优化触发的记忆投毒"
+ },
+ {
+  "from": "spaiware",
+  "to": "mdimage",
+  "type": "inherit",
+  "label": "一次性外泄 → 跨会话持续外泄"
+ },
+ {
+  "from": "spaiware",
+  "to": "greshake",
+  "type": "inherit",
+  "label": "注入第一次获得持久性"
+ },
+ {
+  "from": "agenthopper",
+  "to": "morris2",
+  "type": "support",
+  "label": "自复制在商用编码 agent 上成立"
+ },
+ {
+  "from": "agenthopper",
+  "to": "spaiware",
+  "type": "inherit",
+  "label": "持久化 → 跨主机传播"
+ },
+ {
+  "from": "scaryskills",
+  "to": "asciismuggler",
+  "type": "inherit",
+  "label": "不可见字符进入 skill 供应链"
+ },
+ {
+  "from": "wordworm",
+  "to": "morris2",
+  "type": "support",
+  "label": "办公文档上的自复制实证"
+ },
+ {
+  "from": "wordworm",
+  "to": "agenthopper",
+  "type": "support",
+  "label": "第二条真实产品上的传播链"
+ },
+ {
+  "from": "delayedtool",
+  "to": "greshake",
+  "type": "inherit",
+  "label": "上下文污染可以跨轮生效"
+ },
+ {
+  "from": "injecagent",
+  "to": "greshake",
+  "type": "inherit",
+  "label": "工具集成 agent 的第一个基准"
+ },
+ {
+  "from": "injecagent",
+  "to": "bipia",
+  "type": "inherit",
+  "label": "间接注入基准延伸到工具调用"
+ },
+ {
+  "from": "agentdojo",
+  "to": "injecagent",
+  "type": "inherit",
+  "label": "静态测例 → 可扩展环境"
+ },
+ {
+  "from": "agentdojo",
+  "to": "formalize",
+  "type": "inherit",
+  "label": "评测口径搬进 agent 场景"
+ },
+ {
+  "from": "asb",
+  "to": "injecagent",
+  "type": "inherit",
+  "label": "铺到四个阶段与 400+ 工具"
+ },
+ {
+  "from": "asb",
+  "to": "agentdojo",
+  "type": "support",
+  "label": "独立基准得到同向的高 ASR"
+ },
+ {
+  "from": "wasp",
+  "to": "agentdojo",
+  "type": "inherit",
+  "label": "工具 agent → 端到端 web agent"
+ },
+ {
+  "from": "wasp",
+  "to": "injecagent",
+  "type": "refute",
+  "label": "单步隔离任务测不出真实攻击链"
+ },
+ {
+  "from": "chatinject",
+  "to": "wasp",
+  "type": "support",
+  "label": "web agent 上同向的高成功率"
+ },
+ {
+  "from": "argus",
+  "to": "wasp",
+  "type": "support",
+  "label": "端到端才看得见真实攻击面"
+ },
+ {
+  "from": "zombais",
+  "to": "worstcase",
+  "type": "support",
+  "label": "最坏情况在 computer-use 上落地"
+ },
+ {
+  "from": "zombais",
+  "to": "greshake",
+  "type": "support",
+  "label": "注入到拿主机之间的距离压到零"
+ },
+ {
+  "from": "operator",
+  "to": "zombais",
+  "type": "inherit",
+  "label": "computer-use → 浏览器 agent"
+ },
+ {
+  "from": "operator",
+  "to": "delayedtool",
+  "type": "support",
+  "label": "确认框防的是动作类别不是数据流"
+ },
+ {
+  "from": "githubmcp",
+  "to": "greshake",
+  "type": "inherit",
+  "label": "toxic agent flow：注入触发工具序列"
+ },
+ {
+  "from": "githubmcp",
+  "to": "injecagent",
+  "type": "support",
+  "label": "组合授权产生未授权后果"
+ },
+ {
+  "from": "supabasemcp",
+  "to": "githubmcp",
+  "type": "support",
+  "label": "同一形状在数据库权限上重演"
+ },
+ {
+  "from": "supabasemcp",
+  "to": "lethaltrifecta",
+  "type": "support",
+  "label": "三要素齐备的教科书案例"
+ },
+ {
+  "from": "mdimage",
+  "to": "greshake",
+  "type": "inherit",
+  "label": "间接注入 → 可用的外泄出口"
+ },
+ {
+  "from": "bingexfil",
+  "to": "mdimage",
+  "type": "inherit",
+  "label": "同一通道在搜索引擎上成立"
+ },
+ {
+  "from": "bingexfil",
+  "to": "sydney",
+  "type": "support",
+  "label": "Bing 上从可注入走到可外泄"
+ },
+ {
+  "from": "ghcopilotchat",
+  "to": "mdimage",
+  "type": "inherit",
+  "label": "Markdown 图外泄进入编码助手"
+ },
+ {
+  "from": "copilotexfil",
+  "to": "asciismuggler",
+  "type": "inherit",
+  "label": "不可见字符 + 超链接渲染"
+ },
+ {
+  "from": "copilotexfil",
+  "to": "mdimage",
+  "type": "inherit",
+  "label": "外泄链条加到五段"
+ },
+ {
+  "from": "terminaldillma",
+  "to": "mdimage",
+  "type": "inherit",
+  "label": "出口从浏览器扩展到终端"
+ },
+ {
+  "from": "gitlabduo",
+  "to": "mdimage",
+  "type": "inherit",
+  "label": "img 标签外泄私有源码"
+ },
+ {
+  "from": "gitlabduo",
+  "to": "greshake",
+  "type": "support",
+  "label": "代码托管平台上的间接注入实证"
+ },
+ {
+  "from": "echoleak",
+  "to": "greshake",
+  "type": "support",
+  "label": "零点击间接注入在生产系统成立"
+ },
+ {
+  "from": "echoleak",
+  "to": "mdimage",
+  "type": "inherit",
+  "label": "自动取图仍是最后一跳"
+ },
+ {
+  "from": "echoleak",
+  "to": "googlelayer",
+  "type": "refute",
+  "label": "分类器+链接删除+CSP 被逐层绕过"
+ },
+ {
+  "from": "notion3",
+  "to": "lethaltrifecta",
+  "type": "support",
+  "label": "三件全由官方功能提供"
+ },
+ {
+  "from": "notion3",
+  "to": "mdimage",
+  "type": "inherit",
+  "label": "出口换成搜索工具"
+ },
+ {
+  "from": "forcedleak",
+  "to": "lethaltrifecta",
+  "type": "support",
+  "label": "路人可投递载荷的 CRM 入口"
+ },
+ {
+  "from": "forcedleak",
+  "to": "echoleak",
+  "type": "support",
+  "label": "白名单域名是同一个薄弱点"
+ },
+ {
+  "from": "moab",
+  "to": "ciatriad",
+  "type": "inherit",
+  "label": "单篇披露 → 一个月的系统性披露"
+ },
+ {
+  "from": "moab",
+  "to": "greshake",
+  "type": "support",
+  "label": "主流编码 agent 普遍可攻"
+ },
+ {
+  "from": "moab",
+  "to": "copilotrce",
+  "type": "inherit",
+  "label": "本月最重的一条：注入到 RCE"
+ },
+ {
+  "from": "moab",
+  "to": "ccdns",
+  "type": "inherit",
+  "label": "免批准白名单成为外泄通道"
+ },
+ {
+  "from": "moab",
+  "to": "agenthopper",
+  "type": "inherit",
+  "label": "收尾：自传播 PoC"
+ },
+ {
+  "from": "copilotrce",
+  "to": "zombais",
+  "type": "inherit",
+  "label": "注入 → 代码执行的产品级实证"
+ },
+ {
+  "from": "ccdns",
+  "to": "lethaltrifecta",
+  "type": "support",
+  "label": "DNS 是绕过域名白名单的出口"
+ },
+ {
+  "from": "ccdns",
+  "to": "mdimage",
+  "type": "inherit",
+  "label": "出口从 HTTP 扩展到 DNS"
+ },
+ {
+  "from": "antigravity",
+  "to": "lethaltrifecta",
+  "type": "support",
+  "label": "默认白名单里的 webhook.site"
+ },
+ {
+  "from": "antigravity",
+  "to": "ccdns",
+  "type": "support",
+  "label": "凭据外泄的同一形状"
+ },
+ {
+  "from": "coworkexfil",
+  "to": "forcedleak",
+  "type": "support",
+  "label": "白名单条目合法但可被借用"
+ },
+ {
+  "from": "coworkexfil",
+  "to": "antigravity",
+  "type": "support",
+  "label": "出口管控连续第二次失效"
+ },
+ {
+  "from": "copirate",
+  "to": "spaiware",
+  "type": "inherit",
+  "label": "记忆持久化 + 无审计记录"
+ },
+ {
+  "from": "copirate",
+  "to": "delayedtool",
+  "type": "support",
+  "label": "延迟工具调用两年后仍然有效"
+ },
+ {
+  "from": "copirate",
+  "to": "echoleak",
+  "type": "support",
+  "label": "CSS 字体加载成为新出口"
+ },
+ {
+  "from": "agentcommander",
+  "to": "zombais",
+  "type": "inherit",
+  "label": "一次性执行 → 常态化 C2"
+ },
+ {
+  "from": "spotlight",
+  "to": "greshake",
+  "type": "inherit",
+  "label": "给不可信输入加来源信号"
+ },
+ {
+  "from": "spotlight",
+  "to": "bipia",
+  "type": "inherit",
+  "label": "延续边界意识那条思路"
+ },
+ {
+  "from": "promptarmor",
+  "to": "spotlight",
+  "type": "inherit",
+  "label": "划界 → 用 LLM 直接删注入"
+ },
+ {
+  "from": "promptarmor",
+  "to": "agentdojo",
+  "type": "inherit",
+  "label": "在标准靶场上报 FPR/FNR"
+ },
+ {
+  "from": "commandsans",
+  "to": "spotlight",
+  "type": "inherit",
+  "label": "样本级分类 → token 级净化"
+ },
+ {
+  "from": "commandsans",
+  "to": "promptarmor",
+  "type": "support",
+  "label": "同向：先净化再进模型"
+ },
+ {
+  "from": "commandsans",
+  "to": "neuralexec",
+  "type": "support",
+  "label": "不依赖攻击样本，绕过黑名单困境"
+ },
+ {
+  "from": "jatmo",
+  "to": "formalize",
+  "type": "inherit",
+  "label": "干脆不用指令微调模型"
+ },
+ {
+  "from": "struq",
+  "to": "piname",
+  "type": "inherit",
+  "label": "SQL 类比 → 参数化查询式设计"
+ },
+ {
+  "from": "struq",
+  "to": "jatmo",
+  "type": "inherit",
+  "label": "任务专用 → 双通道结构化查询"
+ },
+ {
+  "from": "ih",
+  "to": "promptinject",
+  "type": "inherit",
+  "label": "把优先级写进训练数据"
+ },
+ {
+  "from": "ih",
+  "to": "greshake",
+  "type": "inherit",
+  "label": "厂商侧对间接注入的正式回应"
+ },
+ {
+  "from": "ihbypass",
+  "to": "ih",
+  "type": "refute",
+  "label": "上线三个月即被三种朴素手法绕过"
+ },
+ {
+  "from": "secalign",
+  "to": "struq",
+  "type": "inherit",
+  "label": "结构化查询 + 偏好优化"
+ },
+ {
+  "from": "secalign",
+  "to": "ih",
+  "type": "inherit",
+  "label": "层级从数据配方走向偏好梯度"
+ },
+ {
+  "from": "ise",
+  "to": "ih",
+  "type": "inherit",
+  "label": "优先级从提示文本进到段嵌入"
+ },
+ {
+  "from": "ise",
+  "to": "struq",
+  "type": "support",
+  "label": "同向：分离要进架构"
+ },
+ {
+  "from": "aside",
+  "to": "sep",
+  "type": "inherit",
+  "label": "把分离度做成可优化的几何"
+ },
+ {
+  "from": "aside",
+  "to": "ise",
+  "type": "support",
+  "label": "第二条独立的架构分离路线"
+ },
+ {
+  "from": "aside",
+  "to": "struq",
+  "type": "inherit",
+  "label": "统计分离 → 表示层分离"
+ },
+ {
+  "from": "metasecalign",
+  "to": "secalign",
+  "type": "inherit",
+  "label": "开源出可被独立攻防的版本"
+ },
+ {
+  "from": "ihbreak",
+  "to": "ih",
+  "type": "inherit",
+  "label": "端到端指标 → 三段白盒诊断"
+ },
+ {
+  "from": "ihbreak",
+  "to": "ihbypass",
+  "type": "support",
+  "label": "两年后确认层级仍在断"
+ },
+ {
+  "from": "attntracker",
+  "to": "formalize",
+  "type": "inherit",
+  "label": "从文本特征转向内部信号"
+ },
+ {
+  "from": "melon",
+  "to": "agentdojo",
+  "type": "inherit",
+  "label": "用掩码重放做劫持判据"
+ },
+ {
+  "from": "melon",
+  "to": "injecagent",
+  "type": "inherit",
+  "label": "面向工具调用的运行时检测"
+ },
+ {
+  "from": "datasentinel",
+  "to": "formalize",
+  "type": "inherit",
+  "label": "检测器进入 minimax 博弈"
+ },
+ {
+  "from": "datasentinel",
+  "to": "attntracker",
+  "type": "inherit",
+  "label": "启发式判据 → 对抗训练判据"
+ },
+ {
+  "from": "agentarmor",
+  "to": "camel",
+  "type": "inherit",
+  "label": "控制流约束 → 轨迹上的程序分析"
+ },
+ {
+  "from": "agentarmor",
+  "to": "agentdojo",
+  "type": "inherit",
+  "label": "在标准靶场上报 ASR/效用"
+ },
+ {
+  "from": "pishield",
+  "to": "attntracker",
+  "type": "inherit",
+  "label": "注意力模式 → 残差流线性探针"
+ },
+ {
+  "from": "firewalls",
+  "to": "agentdojo",
+  "type": "refute",
+  "label": "指标缺陷、实现 bug、攻击太弱"
+ },
+ {
+  "from": "firewalls",
+  "to": "injecagent",
+  "type": "refute",
+  "label": "基准被一个简单方案饱和"
+ },
+ {
+  "from": "firewalls",
+  "to": "asb",
+  "type": "refute",
+  "label": "同上，并给出针对性修正"
+ },
+ {
+  "from": "firewalls",
+  "to": "promptarmor",
+  "type": "refute",
+  "label": "接口级净化即可打满，说明基准上限低"
+ },
+ {
+  "from": "ipisok",
+  "to": "firewalls",
+  "type": "support",
+  "label": "同向：防御框架被系统性高估"
+ },
+ {
+  "from": "ipisok",
+  "to": "agentdojo",
+  "type": "refute",
+  "label": "六条根因 + 三种自适应攻击"
+ },
+ {
+  "from": "ipisok",
+  "to": "attacker2nd",
+  "type": "support",
+  "label": "从结构假设反推攻击"
+ },
+ {
+  "from": "argus",
+  "to": "camel",
+  "type": "inherit",
+  "label": "能力约束 → 因果溯源审计"
+ },
+ {
+  "from": "argus",
+  "to": "landscape",
+  "type": "support",
+  "label": "context-dependent 任务是真缺口"
+ },
+ {
+  "from": "argus",
+  "to": "agentdojo",
+  "type": "refute",
+  "label": "既有基准的任务本身不依赖上下文"
+ },
+ {
+  "from": "camel",
+  "to": "duallllm",
+  "type": "inherit",
+  "label": "草图 → 可实现的系统"
+ },
+ {
+  "from": "camel",
+  "to": "agentdojo",
+  "type": "inherit",
+  "label": "在标准靶场上给出可证安全的代价"
+ },
+ {
+  "from": "camel",
+  "to": "sep",
+  "type": "support",
+  "label": "分离做不到就把控制流拿出来"
+ },
+ {
+  "from": "designpat",
+  "to": "camel",
+  "type": "inherit",
+  "label": "单一方案 → 六种设计模式"
+ },
+ {
+  "from": "designpat",
+  "to": "duallllm",
+  "type": "inherit",
+  "label": "Dual LLM 成为其中一种模式"
+ },
+ {
+  "from": "googlelayer",
+  "to": "spotlight",
+  "type": "inherit",
+  "label": "提示级防御进入产品分层"
+ },
+ {
+  "from": "googlelayer",
+  "to": "geminidefend",
+  "type": "support",
+  "label": "同一厂商的评测与部署两面"
+ },
+ {
+  "from": "ruleoftwo",
+  "to": "lethaltrifecta",
+  "type": "inherit",
+  "label": "经验法则 → 可执行工程约束"
+ },
+ {
+  "from": "ruleoftwo",
+  "to": "camel",
+  "type": "support",
+  "label": "承认检测不可依赖，改上架构约束"
+ },
+ {
+  "from": "mcpcolors",
+  "to": "lethaltrifecta",
+  "type": "inherit",
+  "label": "三要素 → 逐工具染色"
+ },
+ {
+  "from": "mcpcolors",
+  "to": "ruleoftwo",
+  "type": "inherit",
+  "label": "同月的第二个约束型方案"
+ },
+ {
+  "from": "mcpcolors",
+  "to": "githubmcp",
+  "type": "support",
+  "label": "对症解决组合授权问题"
+ },
+ {
+  "from": "archsecure",
+  "to": "camel",
+  "type": "inherit",
+  "label": "静态策略 → 动态重规划"
+ },
+ {
+  "from": "archsecure",
+  "to": "designpat",
+  "type": "inherit",
+  "label": "模式 → 系统级立场"
+ },
+ {
+  "from": "archsecure",
+  "to": "agentdojo",
+  "type": "refute",
+  "label": "基准会制造效用与安全的双重假象"
+ },
+ {
+  "from": "archsecure",
+  "to": "ih",
+  "type": "refute",
+  "label": "层级必须放在受限的系统设计里才有意义"
+ },
+ {
+  "from": "lockdown",
+  "to": "lethaltrifecta",
+  "type": "inherit",
+  "label": "把第三件事从产品里砍掉"
+ },
+ {
+  "from": "lockdown",
+  "to": "coworkexfil",
+  "type": "refute",
+  "label": "限制出站请求，堵最后一跳"
+ },
+ {
+  "from": "lockdown",
+  "to": "ghcopilotchat",
+  "type": "support",
+  "label": "厂商选择砍出口而不是检测"
+ },
+ {
+  "from": "automode",
+  "to": "hackmyclaw",
+  "type": "support",
+  "label": "厂商侧同向数字：注入基本打不动"
+ },
+ {
+  "from": "automode",
+  "to": "ruleoftwo",
+  "type": "refute",
+  "label": "人在环只拦下 13.6%，兜底并不牢"
+ },
+ {
+  "from": "cyberseceval2",
+  "to": "formalize",
+  "type": "inherit",
+  "label": "注入进入厂商级评测套件"
+ },
+ {
+  "from": "cyberseceval2",
+  "to": "promptinject",
+  "type": "inherit",
+  "label": "所有被测模型 26%–41% 中招"
+ },
+ {
+  "from": "geminidefend",
+  "to": "agentdojo",
+  "type": "inherit",
+  "label": "厂商内部的持续自适应评测"
+ },
+ {
+  "from": "critdefense",
+  "to": "formalize",
+  "type": "refute",
+  "label": "同组自我修正：口径漏了两维"
+ },
+ {
+  "from": "critdefense",
+  "to": "spotlight",
+  "type": "refute",
+  "label": "按新口径重评没那么有效"
+ },
+ {
+  "from": "critdefense",
+  "to": "bipia",
+  "type": "refute",
+  "label": "接近零的 ASR 经不起自适应攻击"
+ },
+ {
+  "from": "critdefense",
+  "to": "gandalf",
+  "type": "support",
+  "label": "通用效用必须一起测"
+ },
+ {
+  "from": "llmail",
+  "to": "greshake",
+  "type": "inherit",
+  "label": "真实邮件助手上的自适应挑战"
+ },
+ {
+  "from": "llmail",
+  "to": "hackaprompt",
+  "type": "inherit",
+  "label": "打模型 → 打完整应用"
+ },
+ {
+  "from": "llmail",
+  "to": "sep",
+  "type": "support",
+  "label": "数据集直指指令-数据分离问题"
+ },
+ {
+  "from": "attacker2nd",
+  "to": "critdefense",
+  "type": "support",
+  "label": "把自适应评测做到底"
+ },
+ {
+  "from": "attacker2nd",
+  "to": "univpi",
+  "type": "inherit",
+  "label": "梯度测试立场的完整版"
+ },
+ {
+  "from": "attacker2nd",
+  "to": "hackaprompt",
+  "type": "inherit",
+  "label": "静态攻击串不足以衡量防御"
+ },
+ {
+  "from": "attacker2nd",
+  "to": "formalize",
+  "type": "refute",
+  "label": "静态串评测系统性高估防御"
+ },
+ {
+  "from": "attacker2nd",
+  "to": "geminidefend",
+  "type": "support",
+  "label": "同一批人把方法论公开成判据"
+ },
+ {
+  "from": "piarena",
+  "to": "critdefense",
+  "type": "support",
+  "label": "统一平台上重测，结论一致"
+ },
+ {
+  "from": "piarena",
+  "to": "firewalls",
+  "type": "support",
+  "label": "既有防御扛不住自适应攻击"
+ },
+ {
+  "from": "piarena",
+  "to": "formalize",
+  "type": "inherit",
+  "label": "基准 → 可互插的评测平台"
+ },
+ {
+  "from": "hackmyclaw",
+  "to": "llmail",
+  "type": "inherit",
+  "label": "公开靶场的轻量版本"
+ },
+ {
+  "from": "hackmyclaw",
+  "to": "attacker2nd",
+  "type": "refute",
+  "label": "6000 次人类尝试零成功"
+ },
+ {
+  "from": "sep",
+  "to": "greshake",
+  "type": "inherit",
+  "label": "攻击为何必然奏效的形式化"
+ },
+ {
+  "from": "sep",
+  "to": "piname",
+  "type": "inherit",
+  "label": "拼接问题 → 可测的分离度"
+ },
+ {
+  "from": "lethaltrifecta",
+  "to": "worstcase",
+  "type": "inherit",
+  "label": "三条建议 → 三要素法则"
+ },
+ {
+  "from": "lethaltrifecta",
+  "to": "githubmcp",
+  "type": "support",
+  "label": "组合能力才是危险来源"
+ },
+ {
+  "from": "neversecure",
+  "to": "worstcase",
+  "type": "inherit",
+  "label": "没有可靠防护 → 也许永远没有"
+ },
+ {
+  "from": "neversecure",
+  "to": "lethaltrifecta",
+  "type": "support",
+  "label": "能力本身构成攻击面"
+ },
+ {
+  "from": "normdeviance",
+  "to": "antigravity",
+  "type": "support",
+  "label": "厂商把注入列为已知不修"
+ },
+ {
+  "from": "normdeviance",
+  "to": "neversecure",
+  "type": "support",
+  "label": "没出事被当成安全"
+ },
+ {
+  "from": "roleconfusion",
+  "to": "sep",
+  "type": "support",
+  "label": "分离失败的机制解释"
+ },
+ {
+  "from": "roleconfusion",
+  "to": "chatinject",
+  "type": "support",
+  "label": "模板伪造为何有效"
+ },
+ {
+  "from": "roleconfusion",
+  "to": "ih",
+  "type": "refute",
+  "label": "角色标签不构成边界"
+ },
+ {
+  "from": "trilemma",
+  "to": "promptarmor",
+  "type": "refute",
+  "label": "包装式防御不可能完备"
+ },
+ {
+  "from": "trilemma",
+  "to": "commandsans",
+  "type": "refute",
+  "label": "净化器同属包装式，受同一限制"
+ },
+ {
+  "from": "trilemma",
+  "to": "spotlight",
+  "type": "refute",
+  "label": "连续且保效用就必有漏网带"
+ },
+ {
+  "from": "cifail",
+  "to": "sep",
+  "type": "refute",
+  "label": "分离范式既漏检又误伤"
+ },
+ {
+  "from": "cifail",
+  "to": "struq",
+  "type": "refute",
+  "label": "数据-指令分离不是充分条件"
+ },
+ {
+  "from": "cifail",
+  "to": "aside",
+  "type": "refute",
+  "label": "表示层分开也判不了语境合规"
+ },
+ {
+  "from": "cifail",
+  "to": "argus",
+  "type": "support",
+  "label": "语境合规需要溯源与规范"
+ },
+ {
+  "from": "inseparable",
+  "to": "sep",
+  "type": "inherit",
+  "label": "分离度 → 不可能性定理"
+ },
+ {
+  "from": "inseparable",
+  "to": "piname",
+  "type": "support",
+  "label": "回到冯·诺依曼式代码-数据混淆"
+ },
+ {
+  "from": "inseparable",
+  "to": "aside",
+  "type": "support",
+  "label": "出路是架构性分离通道"
+ },
+ {
+  "from": "inseparable",
+  "to": "jatmo",
+  "type": "support",
+  "label": "换掉共享管线的存在性证明"
+ },
+ {
+  "from": "inseparable",
+  "to": "bipia",
+  "type": "support",
+  "label": "分不清信息与指令是结构性的"
+ },
+ {
+  "from": "inseparable",
+  "to": "trilemma",
+  "type": "support",
+  "label": "管线内做不到，包装层也做不到"
+ },
+ {
+  "from": "inseparable",
+  "to": "cifail",
+  "type": "support",
+  "label": "表示层与语境层两端同时卡死"
+ }
+]
